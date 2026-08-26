@@ -1,0 +1,76 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Test caches and coverage output (source tests are part of the artifact)
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Type checking and linting caches
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Local provider/API failure payloads and resumable run state
+api_failures.jsonl
+*_progress.json
+progress.json
+llm_logs/
+
+# Private or intermediate experiment and annotation outputs
+outputs/
+human_validation/annotation_items.csv
+human_validation/annotation_template.csv
+human_validation/sampling_result.json
+
+# Downloaded/reproducible binary indexes and model checkpoints
+indexes/*.pkl
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.safetensors

@@ -1,0 +1,25 @@
+currency: USD
+unit: per_1m_tokens
+snapshot_date: not_preserved
+pricing_record: author-maintained experiment pricing record
+rates:
+  GPT-OSS-20b:
+    input: 0.02
+    output: 0.10
+    provider: OpenRouter
+    source: https://openrouter.ai/openai/gpt-oss-20b
+  Qwen-3-32b:
+    input: 0.29
+    output: 0.59
+    provider: Groq
+    source: groq
+  Claude-Haiku-4.5:
+    input: 1.00
+    output: 5.00
+    provider: Anthropic
+    source: https://platform.claude.com/docs/zh-TW/about-claude/pricing
+  GPT-4o:
+    input: 2.50
+    output: 10.00
+    provider: OpenAI
+    source: https://platform.openai.com/docs/pricing

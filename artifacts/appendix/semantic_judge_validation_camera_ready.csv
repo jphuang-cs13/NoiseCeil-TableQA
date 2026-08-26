@@ -1,0 +1,9 @@
+paper_table,dataset_or_metric,N,raw_value,extraction_value,change,provenance_class
+judge_native_metric,E2E-WTQ denotation agreement,,26.67%,,,CAMERA_READY_PAPER_FACING
+judge_native_metric,OTT-QA EM agreement,,66.52%,,,CAMERA_READY_PAPER_FACING
+judge_native_metric,FeTaQA corpus BLEU Pearson r,,0.448,,,CAMERA_READY_PAPER_FACING
+judge_native_metric,FeTaQA corpus BLEU Spearman rho,,0.583,,,CAMERA_READY_PAPER_FACING
+judge_extraction_sensitivity,E2E-WTQ agreement,,26.67%,27.86%,+1.19 pp,CAMERA_READY_PAPER_FACING
+judge_extraction_sensitivity,E2E-WTQ kappa,,0.012,0.020,+0.008,CAMERA_READY_PAPER_FACING
+judge_extraction_sensitivity,OTT-QA EM agreement,,66.52%,71.76%,+5.24 pp,CAMERA_READY_PAPER_FACING
+judge_extraction_sensitivity,OTT-QA kappa,,0.035,0.223,+0.188,CAMERA_READY_PAPER_FACING

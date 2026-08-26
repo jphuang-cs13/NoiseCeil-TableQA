@@ -1,0 +1,36 @@
+section,dataset,reader,negative,question_type,error_type,total,DE_count,DE_pct,PR_count,PR_pct,RH_count,RH_pct,Lookup_count,Lookup_pct,Comparison_count,Comparison_pct,Aggregation_count,Aggregation_pct
+negative_x_error_type,,,hard,,,22144,18804,84.916908,735,3.319184,2605,11.763909,,,,,,
+negative_x_error_type,,,soft,,,14492,11338,78.236268,810,5.589291,2344,16.174441,,,,,,
+dataset_x_negative_x_error_type,e2ewtq,,hard,,,746,681,91.286863,7,0.938338,58,7.774799,,,,,,
+dataset_x_negative_x_error_type,e2ewtq,,soft,,,328,286,87.195122,8,2.439024,34,10.365854,,,,,,
+dataset_x_negative_x_error_type,feta,,hard,,,15030,12815,85.262808,505,3.359947,1710,11.377246,,,,,,
+dataset_x_negative_x_error_type,feta,,soft,,,7861,6301,80.155197,400,5.088411,1160,14.756392,,,,,,
+dataset_x_negative_x_error_type,ottqa,,hard,,,6368,5308,83.354271,223,3.501884,837,13.143844,,,,,,
+dataset_x_negative_x_error_type,ottqa,,soft,,,6303,4751,75.376805,402,6.377915,1150,18.24528,,,,,,
+reader_x_negative_x_error_type,,qwen3-32b,hard,,,5636,5057,89.726757,192,3.406671,387,6.866572,,,,,,
+reader_x_negative_x_error_type,,qwen3-32b,soft,,,3492,2912,83.390607,207,5.927835,373,10.681558,,,,,,
+reader_x_negative_x_error_type,,gpt-oss-20b,hard,,,6267,4534,72.347216,64,1.021222,1669,26.631562,,,,,,
+reader_x_negative_x_error_type,,gpt-oss-20b,soft,,,4282,2883,67.328351,51,1.191032,1348,31.480617,,,,,,
+reader_x_negative_x_error_type,,claude-haiku-4-5,hard,,,5797,5293,91.305848,320,5.520097,184,3.174056,,,,,,
+reader_x_negative_x_error_type,,claude-haiku-4-5,soft,,,3799,3220,84.759147,343,9.028692,236,6.212161,,,,,,
+reader_x_negative_x_error_type,,gpt-4o,hard,,,4444,3920,88.208821,159,3.577858,365,8.213321,,,,,,
+reader_x_negative_x_error_type,,gpt-4o,soft,,,2919,2323,79.582049,209,7.159986,387,13.257965,,,,,,
+question_type_x_negative_x_error_type,,,hard,Lookup,,16327,13743,84.173455,566,3.46665,2018,12.359895,,,,,,
+question_type_x_negative_x_error_type,,,soft,Lookup,,10687,8309,77.748667,599,5.604941,1779,16.646393,,,,,,
+question_type_x_negative_x_error_type,,,hard,Comparison,,4837,4175,86.313831,157,3.245814,505,10.440356,,,,,,
+question_type_x_negative_x_error_type,,,soft,Comparison,,3208,2582,80.486284,173,5.392768,453,14.120948,,,,,,
+question_type_x_negative_x_error_type,,,hard,Aggregation,,980,886,90.408163,12,1.22449,82,8.367347,,,,,,
+question_type_x_negative_x_error_type,,,soft,Aggregation,,597,447,74.874372,38,6.365159,112,18.760469,,,,,,
+lookup_hard_x_reader_x_error_type,,qwen3-32b,,,,4143,3695,89.18658,151,3.644702,297,7.168718,,,,,,
+lookup_hard_x_reader_x_error_type,,gpt-oss-20b,,,,4638,3286,70.849504,45,0.970246,1307,28.18025,,,,,,
+lookup_hard_x_reader_x_error_type,,claude-haiku-4-5,,,,4291,3900,90.887905,256,5.965975,135,3.14612,,,,,,
+lookup_hard_x_reader_x_error_type,,gpt-4o,,,,3255,2862,87.926267,114,3.502304,279,8.571429,,,,,,
+error_type_composition_by_question_type,,,all,,Distractor Extraction,30142,,,,,,,22052,73.160374,6757,22.417225,1333,4.422401
+error_type_composition_by_question_type,,,all,,Premature Refusal,1545,,,,,,,1165,75.404531,330,21.359223,50,3.236246
+error_type_composition_by_question_type,,,all,,Reasoning Hallucination,4949,,,,,,,3797,76.72257,958,19.357446,194,3.919984
+error_type_composition_by_question_type,,,hard,,Distractor Extraction,18804,,,,,,,13743,73.085514,4175,22.202723,886,4.711763
+error_type_composition_by_question_type,,,hard,,Premature Refusal,735,,,,,,,566,77.006803,157,21.360544,12,1.632653
+error_type_composition_by_question_type,,,hard,,Reasoning Hallucination,2605,,,,,,,2018,77.466411,505,19.385797,82,3.147793
+error_type_composition_by_question_type,,,soft,,Distractor Extraction,11338,,,,,,,8309,73.28453,2582,22.772976,447,3.942494
+error_type_composition_by_question_type,,,soft,,Premature Refusal,810,,,,,,,599,73.950617,173,21.358025,38,4.691358
+error_type_composition_by_question_type,,,soft,,Reasoning Hallucination,2344,,,,,,,1779,75.895904,453,19.325939,112,4.778157

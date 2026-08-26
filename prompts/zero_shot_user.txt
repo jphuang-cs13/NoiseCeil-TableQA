@@ -1,0 +1,8 @@
+Answer the following question about the given table(s).
+
+Question: {question}
+
+Tables:
+{tables_str}
+
+Answer:

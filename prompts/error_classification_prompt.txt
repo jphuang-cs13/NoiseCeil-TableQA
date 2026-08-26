@@ -1,0 +1,52 @@
+You are an expert in Table Question Answering (Table QA) system evaluation. Your task is to analyze a failed reasoning case and classify the error into one of three categories based on the error typology.
+
+TASK:
+Analyze the following failed case and determine which error type caused the failure.
+
+ERROR TYPOLOGY:
+================================================================================
+1. Distractor Extraction
+   - The incorrect answer is attributable to a distractor table.
+   - In the final automatic labeling pipeline, this category takes
+     precedence when the answer contains an exact substring matching
+     a distractor cell.
+
+2. Premature Refusal
+   - The model explicitly declines to answer or states that the
+     necessary information is unavailable or insufficient.
+   - Explicit refusal phrases are used by the final rule-based labeler.
+
+3. Reasoning Hallucination
+   - The answer is incorrect because of a reasoning, arithmetic,
+     aggregation, or synthesis failure that is not explained by direct
+     distractor extraction or explicit refusal.
+   - This is the residual category after the first two rules.
+================================================================================
+
+CASE INFORMATION:
+================================================================================
+Question: {question}
+
+Gold Answer: {gold_answer}
+
+Model's Answer: {model_answer}
+
+Retrieved Tables Summary:
+{retrieved_tables}
+
+Context Snippet:
+{context}
+================================================================================
+
+Please analyze this case carefully and provide:
+
+1. ERROR_TYPE: State which category this failure belongs to (choose EXACTLY one)
+2. CONFIDENCE: Your confidence level (0.0 to 1.0)
+3. REASONING: Brief explanation of why this error type occurred (2-3 sentences)
+4. KEY_EVIDENCE: Point out specific evidence from the response that supports your classification
+
+Format your response as:
+ERROR_TYPE: <Distractor Extraction|Premature Refusal|Reasoning Hallucination>
+CONFIDENCE: <0.0-1.0>
+REASONING: <your explanation>
+KEY_EVIDENCE: <evidence from the model's answer>

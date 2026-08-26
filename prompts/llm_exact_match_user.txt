@@ -1,0 +1,5 @@
+{question_part}Gold Answer: {gold_answer}
+
+User Answer: {user_answer}
+
+Are these semantically equivalent? Respond with only YES or NO.

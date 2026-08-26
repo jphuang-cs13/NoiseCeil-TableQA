@@ -1,0 +1,48 @@
+You are an expert in Table Question Answering (Table QA) system evaluation. Your task is to analyze a question and classify it into one of three question types based on the reasoning complexity required.
+
+TASK:
+Analyze the following question and determine which question type it belongs to.
+
+QUESTION TYPOLOGY (Choose ONE):
+================================================================================
+1. Lookup
+   - Simple table lookup without complex reasoning
+   - Requires finding a single cell or row based on conditions
+   - No aggregation, comparison, or cross-table reasoning needed
+   - Example: "What is the population of Tokyo?" 
+   - Difficulty: LOW
+   
+2. Comparison
+   - Requires comparing values across rows or tables
+   - Filtering and ranking operations
+   - Simple mathematical operations (max, min, etc.)
+   - May involve multiple conditions but no aggregation
+   - Example: "Which city has the highest population?" or "Is the 2020 value greater than 2010?"
+   - Difficulty: MEDIUM
+   
+3. Aggregation
+   - Requires combining/aggregating data from multiple rows or tables
+   - Numerical operations like sum, average, count, etc.
+   - Multi-step reasoning combining multiple data points
+   - Complex filtering with aggregation
+   - Example: "What is the total population of all cities?" or "What is the average growth rate?"
+   - Difficulty: HIGH
+================================================================================
+
+QUESTION:
+================================================================================
+{question}
+================================================================================
+
+Please analyze this question carefully and provide:
+
+1. QUESTION_TYPE: State which category this question belongs to (choose EXACTLY one)
+2. CONFIDENCE: Your confidence level (0.0 to 1.0)
+3. REASONING: Brief explanation of why this question type was chosen (1-2 sentences)
+4. REQUIRED_OPERATIONS: List the key operations needed to answer this question
+
+Format your response as:
+QUESTION_TYPE: <Lookup|Comparison|Aggregation>
+CONFIDENCE: <0.0-1.0>
+REASONING: <your brief explanation>
+REQUIRED_OPERATIONS: <comma-separated list of operations>

@@ -1,0 +1,21 @@
+{
+  "datasets": [
+    "e2ewtq",
+    "feta",
+    "ottqa"
+  ],
+  "items_per_dataset": 200,
+  "primary_sample_size": 600,
+  "privacy_note": "Public manifests contain opaque sample IDs and no question, reference, response, annotator identity, or notes.",
+  "sampling_script_sha256": "c415641d0303623750d4879d3f54a2729f3b9426d0caaa8b1e33d62162489151",
+  "sampling_seeds": {
+    "annotation_order": 314159,
+    "diagnostic_sampling": 42,
+    "primary_sampling": 42
+  },
+  "semantic_judge_prompt_hashes": {
+    "system": "a18410e4c3cfd80464eb8975ace96f1d0dc819024bfe5620a13fbd32022b42c5",
+    "user": "81d812fc77e321d1c6fc55e6e81ec9dde4d746062d3edfae11ebf93e70acf019"
+  },
+  "status": "public_sanitized_provenance"
+}
